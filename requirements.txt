@@ -11,9 +11,10 @@ ffmpeg-python==0.2.0
 opencv-python-headless==4.11.0.86  # Avoids GUI-related components
 
 # PyTorch CPU-only version to reduce size
-torch==2.2.2+cpu
-torchvision==0.17.2+cpu  # Only required if needed for processing
-torchaudio==2.2.2+cpu  # Include only if audio features are required
+torch==2.2.2+cpu -f https://download.pytorch.org/whl/cpu
+torchvision==0.17.2+cpu -f https://download.pytorch.org/whl/cpu
+torchaudio==2.2.2+cpu -f https://download.pytorch.org/whl/cpu
+
 
 # ML Model Loading and Summarization
 transformers==4.49.0
