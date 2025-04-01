@@ -1,1 +1,1 @@
-web: uvicorn app.main:app --host=0.0.0.0 --port=${PORT}
+web: /app/.heroku/python/bin/python -m uvicorn app.main:app --host=0.0.0.0 --port=${PORT}
