@@ -4,7 +4,7 @@ from app.routers import video_upload, summarize, youtube_download
 
 app = FastAPI()
 
-port = int(os.environ.get("PORT", 5000))
+port = int(os.environ.get("PORT", 8000))
 # Use uvicorn to run the app when executed directly
 if __name__ == "__main__":
     import uvicorn
