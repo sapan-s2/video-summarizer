@@ -11,9 +11,11 @@ ffmpeg-python==0.2.0
 opencv-python-headless==4.11.0.86  # Avoids GUI-related components
 
 # PyTorch CPU-only version to reduce size
-torch==2.2.2+cpu -f https://download.pytorch.org/whl/cpu
-torchvision==0.17.2+cpu -f https://download.pytorch.org/whl/cpu
-torchaudio==2.2.2+cpu -f https://download.pytorch.org/whl/cpu
+torch==2.2.2
+torchvision==0.17.2
+torchaudio==2.2.2
+--index-url https://download.pytorch.org/whl/cpu
+
 
 
 # ML Model Loading and Summarization
