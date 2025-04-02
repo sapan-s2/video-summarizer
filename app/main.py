@@ -13,7 +13,7 @@ if __name__ == "__main__":
 # Include routers
 app.include_router(video_upload.router, prefix="/video", tags=["Video Upload"])
 app.include_router(summarize.router, prefix="/video", tags=["Summarization"])
-app.include_router(youtube_download.router, prefix="/youtube", tags=["YouTube Download"])
+# app.include_router(youtube_download.router, prefix="/youtube", tags=["YouTube Download"])
 
 @app.get("/")
 def read_root():
